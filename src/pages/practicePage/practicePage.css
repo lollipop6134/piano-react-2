@@ -1,0 +1,65 @@
+#practice {
+    font-weight: bold;
+    font-size: 1.7vw;
+    color: #8A3100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+#completeImage {
+    border-radius: 5px;
+    border: 1vmin solid #8A3100;
+    height: 23vw;
+    margin-bottom: 1.5vw;
+}
+
+#practice button {
+    margin-top: 1.5vw;
+}
+
+#practiceImage {
+    height: 13vw;
+    border-radius: 5px;
+    border: 0.7vmin solid #8A3100;
+    margin-top: -0.5vw;
+    margin-bottom: 1vw;
+}
+
+#practiceInfo {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#practiceInfoImage {
+    align-items: center;
+    width: 40vw;
+    justify-content: space-evenly;
+}
+
+#currentNoteImage {
+    height: 6vw;
+    margin-bottom: 0.7vw;
+}
+
+@media screen and (orientation: portrait) {
+    #currentNote {
+        display: none;
+    }
+
+    #practiceImage {
+        display: none;
+    }
+
+    #practiceInfoImage {
+        display: none;
+    }
+
+    #feedback {
+        display: none;
+    }
+}

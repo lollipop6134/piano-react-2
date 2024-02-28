@@ -1,0 +1,123 @@
+#lessonPage input, textarea {
+    border: 1px solid #5F2300;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-weight: bolder;
+    color: #5F2300;
+    font-size: 1.4vw;
+}
+
+#lessonTitle input {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.lessonSection textarea, .lessonParagraph textarea, .lessonSection {
+    width: 100%;
+}
+
+textarea {
+    padding: 0.5vw;
+    resize: vertical;
+}
+
+#otherSettings {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#subtitle {
+    display: flex;
+    flex-direction: column;
+    color: #5F2300;
+}
+
+#subtitle input {
+    text-align: center;
+}
+
+#loadImage {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: center;
+}
+
+#loadImage .main_img {
+    width: 100%;
+}
+
+#loadImage input {
+    width: 50%;
+    margin-top: 0.7vw;
+    border: none;
+}
+
+::file-selector-button {
+    width: 100%;
+    background-color: #5F2300;
+    color: #5F2300;
+    border-radius: 5px;
+    padding: 0.3vw;
+    cursor: pointer;
+    border: none;
+}
+
+#loadImage span {
+    margin-top: -2.2vw;
+    color: antiquewhite;
+    pointer-events: none;
+    font-size: 1.3vw;
+}
+
+@media screen and (orientation: portrait) {
+    #lessonPage input, textarea {
+        font-size: 4.5vw;
+    }
+
+    #lessonTitle input {
+        font-size: 6.5vw;
+    }
+
+    .lessonSection textarea, .lessonParagraph textarea, .lessonSection {
+        flex-direction: column;
+    }
+
+    .lessonParagraph {
+        width: 95%;
+    }
+
+    #otherSettings {
+        margin-top: 5vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .№5 {
+        flex-direction: column-reverse;
+    }
+
+    #loadImage {
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+    
+    #loadImage input {
+        width: 75%;
+        margin-top: -2vw;
+    }
+    
+    ::file-selector-button {
+        width: 100%;
+        padding: 1.5vw;
+    }
+    
+    #loadImage span {
+        color: antiquewhite;
+        pointer-events: none;
+        font-size: 5vw;
+        margin-top: -8vw;
+    }
+}

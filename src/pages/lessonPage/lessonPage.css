@@ -1,0 +1,88 @@
+#lessonPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: #8C4E2A;
+    font-size: 1.4vw;
+}
+
+#lessonTitle {
+    margin: 3vw 0vw 4vw 0vw;
+    font-size: 2vw;
+    color: #5F2300;
+}
+
+.lessonSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+    align-items: center;
+}
+
+.lessonParagraph {
+    margin-top: 0vw;
+    width: 55%;
+}
+
+#lessonPage .main_img {
+    width: 35%;
+}
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+    color: #5F2300;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.notFound img {
+    width: 20vw;
+}
+
+@media screen and (orientation: portrait) {
+    #lessonPage {
+        font-size: 4.5vw;
+    }
+
+    #lessonTitle {
+        margin: 5vw 0vw;
+        font-size: 6.5vw;
+    }
+
+    .lessonSection {
+        flex-direction: column;
+        margin-bottom: 0vw;
+    }
+
+    .lessonParagraph {
+        width: 95%;
+    }
+
+    #lessonPage .main_img {
+        margin: 7vw 0vw;
+        width: 85%;;
+    }
+
+    .notFound {
+        font-size: 9vw;
+    }
+
+    .notFound img {
+        width: 50vw;
+    }
+}
+
+@media print {
+    #lessonPage {
+        margin-top: 5vw;
+    }
+
+    .main-button, .print-button {
+        display: none;
+    }
+}

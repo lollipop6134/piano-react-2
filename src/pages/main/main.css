@@ -1,0 +1,291 @@
+@import url('https://fonts.cdnfonts.com/css/dhyana');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Dhyana', sans-serif;
+    z-index: 10;
+}
+
+.main_img {
+    border: 0.6vw solid #5F2300;
+    border-radius: 5px;
+    width: 27vw;
+}
+
+.container {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.header {
+    color: #953700;
+    font-weight: bold;
+    margin-bottom: 2vw;
+    font-size: 1.8vw;
+}
+
+.description {
+    color: #8C4E2A;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.vector {
+    position: absolute;
+    z-index: 5;
+}
+
+#section1 .vector {
+    margin-top: 5vw;
+    width: 55vw;
+}
+
+#section1 {
+    margin-top: 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section1 .header {
+    font-size: 2.3vw;
+}
+
+#section1 .description {
+    font-size: 1.5vw;
+    margin-top: -1vw;
+}
+
+#section1left {
+    width: 43%;
+}
+
+.main-button {
+    border: none;
+    background-color: #A65323;
+    font-size: 1.2vw;
+    padding: 0.7vw 1.8vw;
+    margin-top: 2vw;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-button:hover {
+    transform: translateY(-0.5vw);
+}
+
+#section2 {
+    margin-top: 5vw;
+}
+
+#section2right {
+    width: 50%;
+    margin-top: 2vw;
+}
+
+#section3 {
+    margin-top: 5vw;
+}
+
+#section3left {
+    width: 55%;
+    margin-top: 3vw;
+}
+
+#section3 .vector {
+    margin-top: -10vw;
+    margin-left: 23vw;
+    width: 30vw;
+}
+
+#section4 {
+    margin-top: 5vw;
+    align-items: center;
+}
+
+#principles {
+    margin-top: 2vw;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#principles div {
+    border: 0.5vw solid #5F2300;
+    border-radius: 5px;
+    background-color: #FFE4BF;
+    align-items: center;
+    text-align: center;
+    padding: 2vw 2vw;
+    width: 31.5%;
+}
+
+#principles .header {
+    font-size: 1.3vw;
+    margin-bottom: 0vw;
+}
+
+#principles .description {
+    font-size: 1.2vw;
+}
+
+#section5 {
+    margin-top: 5vw;
+}
+
+#section5 .vector {
+    width: 65vw;
+    margin-top: -30vw;
+}
+
+#section6 {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+#section6 .main_img {
+    width: 33vw;
+}
+
+#section6 .vector {
+    width: 81vw;
+    margin-top: -5vw;
+    margin-left: -5vw;
+}
+
+@media screen and (orientation: portrait) {
+    .main_img {
+        border: 1vw solid #5F2300;
+        width: 65vw;
+    }
+    
+    .header {
+        font-size: 6vw;
+    }
+    
+    .description {
+        font-size: 4vw;
+    }
+
+    #section1 .vector {
+        width: 100%;
+    }
+    
+    #section1 {
+        margin-top: 7vw;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    #section1 .header {
+        margin-top: 3vw;
+        font-size: 7vw;
+    }
+    
+    #section1 .description {
+        font-size: 5vw;
+        margin-top: 0vw;
+    }
+    
+    #section1left {
+        width: 90%;
+    }
+    
+    .main-button {
+        font-size: 4.5vw;
+        padding: 2vw 6vw;
+        margin-top: 5vw;
+    }
+    
+    .main-button:hover {
+        transform: translateY(-1.5vw);
+    }
+
+    #section2 {
+        margin-top: 7vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #section2right {
+        width: 90%;
+        margin-top: 3vw;
+    }
+
+    #section3 {
+        margin-top: 7vw;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #section3left {
+        width: 90%;
+        margin-top: 3vw;
+    }
+    
+    #section3 .vector {
+        margin-top: 0vw;
+        margin-left: 0vw;
+        width: 100vw;
+    }
+    
+    #principles {
+        margin-top: 0vw;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #principles div {
+        margin-top: 5vw;
+        border: 1vw solid #5F2300;
+        padding: 2vw 4vw;
+        width: 80%;
+    }
+    
+    #principles .header {
+        font-size: 5vw;
+    }
+    
+    #principles .description {
+        font-size: 4.5vw;
+    }
+
+    #section5 {
+        margin-top: 7vw;
+        text-align: center;
+    }
+    
+    #section5 .vector {
+        display: none;
+    }
+
+    #section6 {
+        margin-top: 0vw;
+        margin-bottom: 5vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #section6 .main_img {
+        width: 80%;
+        margin-top: 5vw;
+    }
+    
+    #section6 .vector {
+        width: 100vw;
+        margin-top: -40vw;
+        margin-left: 0vw;
+    }
+}

@@ -1,0 +1,235 @@
+#form, #userForm {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCF8F2;
+    z-index: 10;
+    width: 32vw;
+    padding: 2vw 7vw;
+    color: #8A3100;
+    font-weight: bold;
+    margin-top: 1.8vw;
+    border-radius: 5px;
+    position: relative;
+}
+
+#form input, #userForm input {
+    border: none;
+    background-color: #FCF8F2;
+    border-bottom: 2px solid #8A4200;
+    width: 25vw;
+    font-size: 1.5vw;
+    color: #8A3100;
+    font-weight: bold;
+}
+
+#form .header {
+    margin-bottom: 0;
+}
+
+#inputs {
+    margin-top: 2vh;
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+::-webkit-input-placeholder {
+    color: #8a3000be;
+ }
+ :-moz-placeholder {
+    color: #8a3000be;
+ }
+ ::-moz-placeholder {
+    color: #8a3000be;
+ }
+ :-ms-input-placeholder {
+    color: #8a3000be;
+ }
+
+#form button, #userForm button {
+    font-size: 1.2vw;
+    background-color: rgba(178, 34, 34, 0);
+    color: #953700;
+    padding: 0.4vw 1.3vw;
+    border-radius: 5px;
+    text-decoration:none;
+    text-align:center;
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#953700 50%,#953700);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    border: 1px solid #953700;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#form button:hover, #userForm button:hover {
+    background-position: 0 0;
+    color:#fff;
+}
+
+#formButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#formButtons button {
+    width: 16vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+    background-color:#FCF8F2;
+    border: none;
+    color: #8A4200;
+    font-weight: bold;
+    padding: 0.8vw 2vw;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: -0.3vw;
+}
+
+#formButtons button:hover {
+    background-color: #8A4200;
+    color: #FFFFFF;
+}
+
+#formVector {
+    z-index: 0;
+    width: 70vw;
+}
+
+#formButtons button.active {
+    background-color: #8A3100;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+}
+
+#modal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.149);
+    z-index: 100;
+}
+
+#modalMessage {
+    display: flex;
+    background-color: #f6e9d5;
+    color: #8A3100;
+    font-weight: bold;
+    font-size: 2.5vw;
+    border-radius: 5px;
+    border: 0.5vw solid #5F2300;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    padding: 3vw;
+    flex-direction: column;
+}
+
+#modalMessage button {
+    border-radius: 5px;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 0vw 2vw;
+    background-color:#5F2300;
+    border: none;
+    margin-top: 3vw;
+    margin-bottom: -4.5vw;
+    cursor: pointer;
+}
+
+#eye {
+    width: 1.7vw;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 0.5vw;
+    margin-left: -2.5vw;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #FCF8F2 inset !important;
+    -webkit-text-fill-color: #8a3100;
+}
+
+#changePassword {
+    cursor: pointer;
+    line-height: 0;
+}
+
+#changePassword:hover {
+    text-decoration: underline;
+}
+
+@media screen and (orientation: portrait) {
+    #form, #userForm {
+        width: 80vw;
+        padding: 4vw 10vw;
+        margin-top: 7vw;
+    }
+    
+    #form p, #userForm p {
+        font-size: 7vw;
+    }
+    
+    #form input, #userForm input {
+        border-bottom: 2px solid #8A4200;
+        width: 95%;
+        font-size: 6vw;
+    }
+    
+    #form button, #userForm button {
+        font-size: 5vw;
+        padding: 0.8vw 2vw;
+        border: 1px solid #953700;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+    }
+    
+    #form span, #userForm span {
+        font-size: 4vw;
+    }
+    
+    #formButtons button {
+        width: 40vw;
+        font-size: 5vw;
+        padding: 1.6vw 4vw;
+    }
+    
+    #formVector {
+        display: none;
+    }
+
+    #inputs {
+        height: 55vh;
+        margin-top: 5vh;
+    }
+
+    .bottom {
+        left: 0;
+        width: 100%;
+    }
+
+    #eye {
+        width: 6vw;
+        margin-top: 2.5vw;
+        margin-left: -7.5vw;
+    }
+}

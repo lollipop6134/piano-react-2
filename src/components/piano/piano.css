@@ -1,0 +1,37 @@
+#piano {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 42%;
+    width: 100%;
+    user-select: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#rotate {
+    display: none;
+}
+
+@media screen and (orientation: portrait) {
+    #piano {
+        display: none;
+    }
+
+    #rotate {
+        display: flex;
+        flex-direction: column;
+        color: #582406;
+        font-size: 5vw;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vw;
+    }
+
+    #rotate img {
+        width: 20vw;margin-top: 10vw;
+    }
+}
